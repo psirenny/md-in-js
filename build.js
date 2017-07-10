@@ -26,7 +26,7 @@ const build = (cb) => {
     );
 
     const bundlePlugins = [
-      rollupPluginFlow(),
+      rollupPluginFlow({ pretty: true }),
       rollupPluginNodeResolve(),
     ];
 
