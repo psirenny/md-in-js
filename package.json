@@ -41,8 +41,8 @@
   "scripts": {
     "build": "babel-node --presets=es2015,stage-0 build.js",
     "fixpack": "fixpack",
-    "flow-check": "flow check",
+    "flow": "flow",
     "lint": "eslint .",
-    "test": "npm run fixpack && npm run flow-check && npm run lint"
+    "test": "npm run fixpack && npm run flow check && npm run lint"
   }
 }
