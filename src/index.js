@@ -1,17 +1,17 @@
 // @flow
 
-export { default as animationDurationOfDesktopEnter } from './animation_duration_desktop_enter';
-export { default as animationDurationOfDesktopExit } from './animation_duration_desktop_exit';
-export { default as animationDurationOfDesktopFullScreen } from './animation_duration_desktop_full-screen';
-export { default as animationDurationOfMobileEnter } from './animation_duration_mobile_enter';
-export { default as animationDurationOfMobileExit } from './animation_duration_mobile_exit';
-export { default as animationDurationOfMobileFullScreen } from './animation_duration_mobile_full-screen';
-export { default as animationDurationOfTabletEnter } from './animation_duration_tablet_enter';
-export { default as animationDurationOfTabletExit } from './animation_duration_tablet_exit';
-export { default as animationDurationOfTabletFullScreen } from './animation_duration_tablet_full-screen';
-export { default as animationDurationOfWearableEnter } from './animation_duration_wearable_enter';
-export { default as animationDurationOfWearableExit } from './animation_duration_wearable_exit';
-export { default as animationDurationOfWearableFullScreen } from './animation_duration_wearable_full-screen';
+export { default as animationDurationDesktopEnter } from './animation_duration_desktop_enter';
+export { default as animationDurationDesktopExit } from './animation_duration_desktop_exit';
+export { default as animationDurationDesktopFullScreen } from './animation_duration_desktop_full-screen';
+export { default as animationDurationMobileEnter } from './animation_duration_mobile_enter';
+export { default as animationDurationMobileExit } from './animation_duration_mobile_exit';
+export { default as animationDurationMobileFullScreen } from './animation_duration_mobile_full-screen';
+export { default as animationDurationTabletEnter } from './animation_duration_tablet_enter';
+export { default as animationDurationTabletExit } from './animation_duration_tablet_exit';
+export { default as animationDurationTabletFullScreen } from './animation_duration_tablet_full-screen';
+export { default as animationDurationWearableEnter } from './animation_duration_wearable_enter';
+export { default as animationDurationWearableExit } from './animation_duration_wearable_exit';
+export { default as animationDurationWearableFullScreen } from './animation_duration_wearable_full-screen';
 export { default as animationDurationRatioDesktopToMobile } from './animation_duration-ratio_desktop-to-mobile';
 export { default as animationDurationRatioTabletToMobile } from './animation_duration-ratio_tablet-to-mobile';
 export { default as animationDurationRatioWearableToMobile } from './animation_duration-ratio_wearable-to-mobile';
