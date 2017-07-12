@@ -1,3 +1,3 @@
 // @flow
 
-export default [141, 15, 15];
+export default ['141', '15%', '15%'];
