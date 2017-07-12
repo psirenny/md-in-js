@@ -1,5 +1,3 @@
 // @flow
 
-import hsl from './color_lime_500_hsl';
-
-export default [hsl[0], hsl[1], 30];
+export { default } from './color-correction_yellow_55-70_light_hsl';
