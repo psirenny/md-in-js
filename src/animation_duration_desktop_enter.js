@@ -1,6 +1,7 @@
 // @flow
 
-import mobileDuration from './animation_duration_mobile_enter';
-import ratio from './animation_duration-ratio_desktop-to-mobile';
+import mobileEnterDuration from './animation_duration_mobile_enter';
+import mobileExitDuration from './animation_duration_mobile_exit';
+import desktopExitDuration from './animation_duration_desktop_exit';
 
-export default mobileDuration * ratio;
+export default (mobileEnterDuration / mobileExitDuration) * desktopExitDuration;
