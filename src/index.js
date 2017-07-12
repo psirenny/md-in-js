@@ -455,3 +455,5 @@ export { default as typographyContrastHeadline } from './typography_contrast_hea
 export { default as typographyContrastMenu } from './typography_contrast_menu.js';
 export { default as typographyContrastSubheading } from './typography_contrast_subheading.js';
 export { default as typographyContrastTitle } from './typography_contrast_title.js';
+export { default as typographyContrastRatioIdeal } from './typography_contrast-ratio_ideal';
+export { default as typographyContrastRatioMinimum } from './typography_contrast-ratio_minimum';
