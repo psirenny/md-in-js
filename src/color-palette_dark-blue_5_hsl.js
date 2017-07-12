@@ -1,5 +1,5 @@
 // @flow
 
-import colorBlue500Hsl from './color_blue_500_hsl';
+import hsl from './color_blue_500_hsl';
 
-export default [colorBlue500Hsl[0], colorBlue500Hsl[1], 30];
+export default [hsl[0], hsl[1], 30];
