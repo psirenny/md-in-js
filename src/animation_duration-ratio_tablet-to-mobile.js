@@ -1,3 +1,3 @@
 // @flow
 
-export default 0.5;
+export default 1.3;
