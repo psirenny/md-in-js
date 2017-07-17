@@ -484,6 +484,12 @@ export { default as typographyLeadingTallDisplay2 } from './typography_leading_t
 export { default as typographyLeadingTallHeadline } from './typography_leading_tall_headline';
 export { default as typographyLeadingTallSubheading1 } from './typography_leading_tall_subheading_1';
 export { default as typographyLeadingTallSubheading2 } from './typography_leading_tall_subheading_2';
+export { default as typographyLineLengthDenseBody } from './typography_line-length_dense_body';
+export { default as typographyLineLengthDenseShort } from './typography_line-length_dense_short';
+export { default as typographyLineLengthEnLikeBody } from './typography_line-length_en-like_body';
+export { default as typographyLineLengthEnLikeShort } from './typography_line-length_en-like_short';
+export { default as typographyLineLengthTallBody } from './typography_line-length_tall_body';
+export { default as typographyLineLengthTallShort } from './typography_line-length_tall_short';
 export { default as typographyLocaleScriptAf } from './typography_locale_script_af';
 export { default as typographyLocaleScriptAm } from './typography_locale_script_am';
 export { default as typographyLocaleScriptAr } from './typography_locale_script_ar';
