@@ -1,5 +1,5 @@
 // @flow
 
-import standardSize from './typography_size_en-like_body_1_desktop';
+import enLikeSize from './typography_size_en-like_body_1_desktop';
 
-export default standardSize + 1;
+export default enLikeSize + 1;
