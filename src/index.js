@@ -420,6 +420,12 @@ export { default as colorPaletteDarkYellow3Hsl } from './color-palette_dark-yell
 export { default as colorPaletteDarkYellow4Hsl } from './color-palette_dark-yellow_4_hsl.js';
 export { default as colorPaletteDarkYellow5Hsl } from './color-palette_dark-yellow_5_hsl.js';
 export { default as colorPaletteDarkYellow6Hsl } from './color-palette_dark-yellow_6_hsl.js';
+export { default as layoutBreakpointDesktopLandscape } from './layout_breakpoint_desktop_landscape';
+export { default as layoutBreakpointDesktopPortrait } from './layout_breakpoint_desktop_portrait';
+export { default as layoutBreakpointMobileLandscape } from './layout_breakpoint_mobile_landscape';
+export { default as layoutBreakpointMobilePortrait } from './layout_breakpoint_mobile_portrait';
+export { default as layoutBreakpointTabletLandscape } from './layout_breakpoint_tablet_landscape';
+export { default as layoutBreakpointTabletPortrait } from './layout_breakpoint_tablet_portrait';
 export { default as shadowAmbientOpacity } from './shadow_ambient_opacity';
 export { default as shadowElevation1 } from './shadow_elevation_1';
 export { default as shadowElevation2 } from './shadow_elevation_2';
