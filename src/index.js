@@ -631,3 +631,13 @@ export { default as typographySizeTallHeadline } from './typography_size_tall_he
 export { default as typographySizeTallSubheadingDesktop } from './typography_size_tall_subheading_desktop';
 export { default as typographySizeTallSubheadingDevice } from './typography_size_tall_subheading_device';
 export { default as typographySizeTallTitle } from './typography_size_tall_title';
+export { default as typographyTrackingBody1 } from './typography_tracking_body_1';
+export { default as typographyTrackingBody2 } from './typography_tracking_body_2';
+export { default as typographyTrackingButton } from './typography_tracking_button';
+export { default as typographyTrackingCaption } from './typography_tracking_caption';
+export { default as typographyTrackingDisplay1 } from './typography_tracking_display_1';
+export { default as typographyTrackingDisplay2 } from './typography_tracking_display_2';
+export { default as typographyTrackingDisplay3 } from './typography_tracking_display_3';
+export { default as typographyTrackingDisplay4 } from './typography_tracking_display_4';
+export { default as typographyTrackingSubheading } from './typography_tracking_subheading';
+export { default as typographyTrackingTitle } from './typography_tracking_title';
