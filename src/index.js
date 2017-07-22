@@ -428,6 +428,9 @@ export { default as formatDurationHourMinDefault } from './format_duration_hour-
 export { default as formatDurationHourMinSecDefault } from './format_duration_hour-min-sec_default';
 export { default as formatDurationMinDefault } from './format_duration_min_default';
 export { default as formatDurationMinSecDefault } from './format_duration_min-sec_default';
+export { default as formatRedactedLetters } from './format_redacted_letters';
+export { default as formatRedactedNumbers3 } from './format_redacted_numbers_3';
+export { default as formatRedactedNumbers4 } from './format_redacted_numbers_4';
 export { default as unitsMsPerHour } from './units_ms-per-hour';
 export { default as unitsMsPerMin } from './units_ms-per-min';
 export { default as unitsMsPerSec } from './units_ms-per-sec';
