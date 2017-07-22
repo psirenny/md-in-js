@@ -420,6 +420,17 @@ export { default as colorPaletteDarkYellow3Hsl } from './color-palette_dark-yell
 export { default as colorPaletteDarkYellow4Hsl } from './color-palette_dark-yellow_4_hsl.js';
 export { default as colorPaletteDarkYellow5Hsl } from './color-palette_dark-yellow_5_hsl.js';
 export { default as colorPaletteDarkYellow6Hsl } from './color-palette_dark-yellow_6_hsl.js';
+export { default as formatDurationHourMin } from './format_duration_hour-min';
+export { default as formatDurationHourMinSec } from './format_duration_hour-min-sec';
+export { default as formatDurationMin } from './format_duration_min';
+export { default as formatDurationMinSec } from './format_duration_min-sec';
+export { default as formatDurationHourMinDefault } from './format_duration_hour-min_default';
+export { default as formatDurationHourMinSecDefault } from './format_duration_hour-min-sec_default';
+export { default as formatDurationMinDefault } from './format_duration_min_default';
+export { default as formatDurationMinSecDefault } from './format_duration_min-sec_default';
+export { default as unitsMsPerHour } from './units_ms-per-hour';
+export { default as unitsMsPerMin } from './units_ms-per-min';
+export { default as unitsMsPerSec } from './units_ms-per-sec';
 export { default as layoutBreakpointDesktopLandscape } from './layout_breakpoint_desktop_landscape';
 export { default as layoutBreakpointDesktopPortrait } from './layout_breakpoint_desktop_portrait';
 export { default as layoutBreakpointMobileLandscape } from './layout_breakpoint_mobile_landscape';
