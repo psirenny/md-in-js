@@ -4,3 +4,4 @@
 *.log
 build.js
 src
+test
