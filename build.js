@@ -4,6 +4,7 @@ import asyncEach from 'async/each';
 import asyncParallel from 'async/parallel';
 import { readdir as fsReaddir } from 'fs';
 import { copy as fsExtraCopy, remove as fsExtraRemove } from 'fs-extra';
+import _endsWith from 'lodash/fp/endsWith';
 import _includes from 'lodash/fp/includes';
 import _map from 'lodash/fp/map';
 import { join as pathJoin } from 'path';
@@ -35,9 +36,15 @@ const build = (cb) => {
         rollupPluginNodeResolve(),
       ];
 
-      return asyncEach(srcFiles, (srcFile, done0) => {
+      return asyncEach(srcFiles, (srcFile, done1) => {
         const srcPath = pathJoin(srcDir, srcFile);
         const libPath = pathJoin(libDir, srcFile);
+
+        if (!_endsWith('.js', srcFile)) {
+          return fsExtraCopy(srcPath, libPath)
+            .catch(err => done1(err))
+            .then(() => done1());
+        }
 
         const bundleExternal = (moduleId) => (
           moduleId !== srcPath && _includes(moduleId, srcPaths)
@@ -55,23 +62,23 @@ const build = (cb) => {
           sourceMap: true,
         };
 
-        asyncParallel([
-          done1 => (
+        return asyncParallel([
+          done2 => (
             fsExtraCopy(srcPath, `${libPath}.flow`)
-              .catch(err => done1(err))
-              .then(() => done1())
+              .catch(err => done2(err))
+              .then(() => done2())
           ),
-          done1 => (
+          done2 => (
             rollupBundle(bundleCreateOpts)
-              .catch(err => done1(err))
+              .catch(err => done2(err))
               .then((bundle) => (
                 bundle.write(bundleWriteOpts)
-                  .catch(err => done1(err))
-                  .then(() => done1())
+                  .catch(err => done2(err))
+                  .then(() => done2())
               ))
           ),
-        ], done0);
-      });
+        ], done1);
+      }, cb);
     });
   });
 };

@@ -420,6 +420,14 @@ export { default as colorPaletteDarkYellow3Hsl } from './color-palette_dark-yell
 export { default as colorPaletteDarkYellow4Hsl } from './color-palette_dark-yellow_4_hsl.js';
 export { default as colorPaletteDarkYellow5Hsl } from './color-palette_dark-yellow_5_hsl.js';
 export { default as colorPaletteDarkYellow6Hsl } from './color-palette_dark-yellow_6_hsl.js';
+export { default as fontUnicodeRangeCyrillicExt } from './font_unicode-range_cyrillic-ext';
+export { default as fontUnicodeRangeCyrillic } from './font_unicode-range_cyrillic';
+export { default as fontUnicodeRangeDevanagari } from './font_unicode-range_devanagari';
+export { default as fontUnicodeRangeGreekExt } from './font_unicode-range_greek-ext';
+export { default as fontUnicodeRangeGreek } from './font_unicode-range_greek';
+export { default as fontUnicodeRangeLatinExt } from './font_unicode-range_latin-ext';
+export { default as fontUnicodeRangeLatin } from './font_unicode-range_latin';
+export { default as fontUnicodeRangeVietnamese } from './font_unicode-range_vietnamese';
 export { default as formatDurationHourMin } from './format_duration_hour-min';
 export { default as formatDurationHourMinSec } from './format_duration_hour-min-sec';
 export { default as formatDurationMin } from './format_duration_min';
