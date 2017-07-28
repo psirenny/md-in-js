@@ -14,4 +14,6 @@ type Input = {
   minute: number,
 };
 
-export default (x: Input) => (x.minute ? formatLong : formatShort);
+export default (x: Input) => (
+  x.minute ? formatLong : formatShort
+);

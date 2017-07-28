@@ -16,10 +16,11 @@ import {
   formatDateOptionsYearMonthDayShort,
   formatDateRangeString,
   formatDateString,
-  formatDurationHourMinString,
-  formatDurationHourMinSecString,
-  formatDurationMinString,
-  formatDurationMinSecString,
+  formatDurationOptionsHourMin,
+  formatDurationOptionsHourMinSec,
+  formatDurationOptionsMin,
+  formatDurationOptionsMinSec,
+  formatDurationString,
   unitsMsPerHour as hr,
   unitsMsPerMin as min,
   unitsMsPerSec as sec,
@@ -278,42 +279,49 @@ test('date range "MMMM d, yyyy–MMMM d, yyyy"', (t) => {
 
 test('duration "HH:MM:SS"', (t) => {
   const duration = (100 * hr) + (1 * min) + (1.5 * sec);
-  const value = formatDurationHourMinSecString(duration);
+  const format = formatDurationOptionsHourMinSec;
+  const value = formatDurationString(format, duration);
   t.is(value, '100:01:02');
 });
 
 test('duration "H:MM:SS"', (t) => {
   const duration = (1 * hr) + (1 * min) + (1.5 * sec);
-  const value = formatDurationHourMinSecString(duration);
+  const format = formatDurationOptionsHourMinSec;
+  const value = formatDurationString(format, duration);
   t.is(value, '1:01:02');
 });
 
 test('duration "HH:MM"', (t) => {
   const duration = (100 * hr) + (1.5 * min);
-  const value = formatDurationHourMinString(duration);
+  const format = formatDurationOptionsHourMin;
+  const value = formatDurationString(format, duration);
   t.is(value, '100:02');
 });
 
 test('duration "H:MM"', (t) => {
   const duration = (1 * hr) + (1.5 * min);
-  const value = formatDurationHourMinString(duration);
+  const format = formatDurationOptionsHourMin;
+  const value = formatDurationString(format, duration);
   t.is(value, '1:02');
 });
 
 test('duration "MM:SS"', (t) => {
   const duration = (100 * min) + (1.5 * sec);
-  const value = formatDurationMinSecString(duration);
+  const format = formatDurationOptionsMinSec;
+  const value = formatDurationString(format, duration);
   t.is(value, '100:02');
 });
 
 test('duration "M:SS"', (t) => {
   const duration = (1 * min) + (1.5 * sec);
-  const value = formatDurationMinSecString(duration);
+  const format = formatDurationOptionsMinSec;
+  const value = formatDurationString(format, duration);
   t.is(value, '1:02');
 });
 
 test('duration "M"', (t) => {
   const duration = (1.5 * min);
-  const value = formatDurationMinString(duration);
+  const format = formatDurationOptionsMin;
+  const value = formatDurationString(format, duration);
   t.is(value, '2');
 });
