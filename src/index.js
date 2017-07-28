@@ -15,6 +15,8 @@ export { default as animationDurationWearableFullScreen } from './animation_dura
 export { default as animationDurationRatioDesktopToMobile } from './animation_duration-ratio_desktop-to-mobile';
 export { default as animationDurationRatioTabletToMobile } from './animation_duration-ratio_tablet-to-mobile';
 export { default as animationDurationRatioWearableToMobile } from './animation_duration-ratio_wearable-to-mobile';
+export { default as animationImageDark } from './animation_image_dark';
+export { default as animationImageLight } from './animation_image_light';
 export { default as animationTimingFunctionAcceleration } from './animation_timing-function_acceleration';
 export { default as animationTimingFunctionDeceleration } from './animation_timing-function_deceleration';
 export { default as animationTimingFunctionSharp } from './animation_timing-function_sharp';
