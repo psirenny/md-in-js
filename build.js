@@ -5,8 +5,6 @@ import asyncParallel from 'async/parallel';
 import { readdir as fsReaddir } from 'fs';
 import { copy as fsExtraCopy, remove as fsExtraRemove } from 'fs-extra';
 import _endsWith from 'lodash/fp/endsWith';
-import _includes from 'lodash/fp/includes';
-import _map from 'lodash/fp/map';
 import { join as pathJoin } from 'path';
 import { rollup as rollupBundle } from 'rollup';
 import rollupPluginFlow from 'rollup-plugin-flow';
@@ -26,11 +24,6 @@ const build = (cb) => {
         return cb(removeLibDirErr);
       }
 
-      const srcPaths = _map(
-        srcFile => pathJoin(srcDir, srcFile),
-        srcFiles,
-      );
-
       const bundlePlugins = [
         rollupPluginFlow({ pretty: true }),
         rollupPluginNodeResolve(),
@@ -47,7 +40,7 @@ const build = (cb) => {
         }
 
         const bundleExternal = (moduleId) => (
-          moduleId !== srcPath && _includes(moduleId, srcPaths)
+          moduleId !== srcPath
         );
 
         const bundleCreateOpts = {
