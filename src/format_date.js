@@ -1,22 +1,14 @@
 // @flow
 
-export type DateInput = {
-  year?: number,
-  month?: number,
-  day?: number,
-  hour?: number,
-  minute?: number,
-  second?: number,
-  millisecond?: number,
-};
+import type { DateAlias } from './format_type_date-alias';
+import type { DateInput } from './format_type_date-input';
 
 export default (
   options: (DateInput) => Date$LocaleOptions,
   locales: IntlLocales,
+  aliases: ?DateAlias[],
   input: DateInput,
 ) => {
-  const intl = new Intl.DateTimeFormat(locales, options(input));
-
   const date = new Date(
     input.year || 0,
     input.month || 0,
@@ -27,5 +19,36 @@ export default (
     input.millisecond || 0,
   );
 
-  return intl.formatToParts(date);
+  let intlFormat = options(input);
+  let partMatches = [];
+
+  if (aliases) {
+    aliases.forEach((alias) => {
+      const result = alias(input, intlFormat);
+
+      if (result) {
+        intlFormat = result[0];
+        partMatches = partMatches.concat(result[1]);
+      }
+    });
+  }
+
+  const intl = new Intl.DateTimeFormat(locales, intlFormat);
+  let parts = intl.formatToParts(date);
+
+  if (partMatches.length) {
+    parts = parts.map((part) => {
+      const currentPart = part;
+
+      partMatches.forEach((partMatch) => {
+        if (currentPart.type === partMatch.type) {
+          currentPart.value = partMatch.value;
+        }
+      });
+
+      return currentPart;
+    });
+  }
+
+  return parts;
 };

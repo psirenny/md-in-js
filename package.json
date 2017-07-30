@@ -62,7 +62,7 @@
   "repository": "https://github.com/psirenny/md-in-js",
   "scripts": {
     "ava": "ava",
-    "build": "babel-node --presets=es2015,stage-0 build.js",
+    "build": "babel-node --presets=es2015,stage-0 build",
     "check": "npm run fixpack && npm run flow check && npm run lint && npm run test",
     "fixpack": "fixpack",
     "flow": "flow",

@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint-disable no-undef */
+
 declare type IntlLocales = string | string;
 
 declare type IntlFormatPart = {

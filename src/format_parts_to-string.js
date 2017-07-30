@@ -1,7 +1,5 @@
 // @flow
 
-type Part = { value: string };
-
-export default (parts: Part[]) => (
+export default (parts: IntlFormatPart[]) => (
   parts.map(x => x.value).join('')
 );
