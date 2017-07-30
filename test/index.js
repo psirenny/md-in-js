@@ -297,49 +297,49 @@ test('date range "MMMM d, yyyy–MMMM d, yyyy"', (t) => {
   t.is(value, 'January 4, 2014–February 6, 2016');
 });
 
-test('duration "HH:MM:SS"', (t) => {
+test('duration "h:mm:ss"', (t) => {
   const duration = (100 * hr) + (1 * min) + (1.5 * sec);
   const format = formatDurationOptionsHourMinSec;
   const value = formatDurationString(format, duration);
   t.is(value, '100:01:02');
 });
 
-test('duration "H:MM:SS"', (t) => {
+test('duration "h:mm:ss"', (t) => {
   const duration = (1 * hr) + (1 * min) + (1.5 * sec);
   const format = formatDurationOptionsHourMinSec;
   const value = formatDurationString(format, duration);
   t.is(value, '1:01:02');
 });
 
-test('duration "HH:MM"', (t) => {
+test('duration "h:mm"', (t) => {
   const duration = (100 * hr) + (1.5 * min);
   const format = formatDurationOptionsHourMin;
   const value = formatDurationString(format, duration);
   t.is(value, '100:02');
 });
 
-test('duration "H:MM"', (t) => {
+test('duration "h:mm"', (t) => {
   const duration = (1 * hr) + (1.5 * min);
   const format = formatDurationOptionsHourMin;
   const value = formatDurationString(format, duration);
   t.is(value, '1:02');
 });
 
-test('duration "MM:SS"', (t) => {
+test('duration "m:ss"', (t) => {
   const duration = (100 * min) + (1.5 * sec);
   const format = formatDurationOptionsMinSec;
   const value = formatDurationString(format, duration);
   t.is(value, '100:02');
 });
 
-test('duration "M:SS"', (t) => {
+test('duration "m:ss"', (t) => {
   const duration = (1 * min) + (1.5 * sec);
   const format = formatDurationOptionsMinSec;
   const value = formatDurationString(format, duration);
   t.is(value, '1:02');
 });
 
-test('duration "M"', (t) => {
+test('duration "m"', (t) => {
   const duration = (1.5 * min);
   const format = formatDurationOptionsMin;
   const value = formatDurationString(format, duration);
