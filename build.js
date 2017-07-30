@@ -9,6 +9,7 @@ import { copy as fsExtraCopy, remove as fsExtraRemove } from 'fs-extra';
 import _endsWith from 'lodash/fp/endsWith';
 import { join as pathJoin } from 'path';
 import { rollup as rollupBundle } from 'rollup';
+import rollupPluginBabel from 'rollup-plugin-babel';
 import rollupPluginFlow from 'rollup-plugin-flow';
 import rollupPluginNodeResolve from 'rollup-plugin-node-resolve';
 
@@ -27,8 +28,13 @@ const build = (cb) => {
       }
 
       const bundlePlugins = [
-        rollupPluginFlow({ pretty: true }),
         rollupPluginNodeResolve(),
+        rollupPluginFlow({ pretty: true }),
+        rollupPluginBabel({
+          babelrc: false,
+          externalHelpers: true,
+          plugins: ['external-helpers', 'transform-object-rest-spread'],
+        }),
       ];
 
       return asyncEach(srcFiles, (srcFile, done1) => {
