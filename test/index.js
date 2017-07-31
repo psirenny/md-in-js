@@ -8,13 +8,16 @@ import {
   formatDateOptionsHourMin,
   formatDateOptionsHourMinShort,
   formatDateOptionsMonthDay,
-  formatDateOptionsMonthDayShort,
+  formatDateOptionsMonthShortDay,
   formatDateOptionsWeekday,
-  formatDateOptionsWeekdayHourMinAbbr,
+  formatDateOptionsWeekdayHourMin,
+  formatDateOptionsWeekdayHourMinShort,
   formatDateOptionsWeekdayNarrow,
   formatDateOptionsWeekdayShort,
+  formatDateOptionsWeekdayShortHourMin,
+  formatDateOptionsWeekdayShortHourMinShort,
   formatDateOptionsYearMonthDay,
-  formatDateOptionsYearMonthDayShort,
+  formatDateOptionsYearMonthShortDay,
   formatDateRangeString,
   formatDateString,
   formatDurationOptionsHourMin,
@@ -94,18 +97,42 @@ test('date "dddd"', (t) => {
   t.is(value, 'Sunday');
 });
 
-test('date "ddd, h:mm"', (t) => {
+test('date "ddd, h tt"', (t) => {
   const locales = 'en';
   const x = { day: 0, hour: 9 };
-  const format = formatDateOptionsWeekdayHourMinAbbr;
+  const format = formatDateOptionsWeekdayShortHourMinShort;
+  const value = formatDateString(format, locales, null, x);
+  t.is(value, 'Sun, 9 AM');
+});
+
+test('date "ddd, h:mm tt"', (t) => {
+  const locales = 'en';
+  const x = { day: 0, hour: 9 };
+  const format = formatDateOptionsWeekdayShortHourMin;
   const value = formatDateString(format, locales, null, x);
   t.is(value, 'Sun 9:00 AM');
+});
+
+test.skip('date "dddd, h tt"', (t) => {
+  const locales = 'en';
+  const x = { day: 0, hour: 9 };
+  const format = formatDateOptionsWeekdayHourMinShort;
+  const value = formatDateString(format, locales, null, x);
+  t.is(value, 'Sunday 9 AM');
+});
+
+test.skip('date "dddd, h:mm tt"', (t) => {
+  const locales = 'en';
+  const x = { day: 0, hour: 9 };
+  const format = formatDateOptionsWeekdayHourMin;
+  const value = formatDateString(format, locales, null, x);
+  t.is(value, 'Sunday 9:00 AM');
 });
 
 test('date "MMM d"', (t) => {
   const locales = 'en';
   const x = { month: 0, day: 4 };
-  const format = formatDateOptionsMonthDayShort;
+  const format = formatDateOptionsMonthShortDay;
   const value = formatDateString(format, locales, null, x);
   t.is(value, 'Jan 4');
 });
@@ -121,7 +148,7 @@ test('date "MMMM d"', (t) => {
 test('date "MMM d, yyyy"', (t) => {
   const locales = 'en';
   const x = { year: 2014, month: 0, day: 4 };
-  const format = formatDateOptionsYearMonthDayShort;
+  const format = formatDateOptionsYearMonthShortDay;
   const value = formatDateString(format, locales, null, x);
   t.is(value, 'Jan 4, 2014');
 });
@@ -229,7 +256,7 @@ test('date range "MMM d–d"', (t) => {
   const locales = 'en';
   const x = { month: 0, day: 4 };
   const y = { month: 0, day: 6 };
-  const format = formatDateOptionsMonthDayShort;
+  const format = formatDateOptionsMonthShortDay;
   const value = formatDateRangeString(format, locales, true, null, x, y);
   t.is(value, 'Jan 4–6');
 });
@@ -238,7 +265,7 @@ test('date range "MMM d–MMM d"', (t) => {
   const locales = 'en';
   const x = { month: 0, day: 4 };
   const y = { month: 1, day: 6 };
-  const format = formatDateOptionsMonthDayShort;
+  const format = formatDateOptionsMonthShortDay;
   const value = formatDateRangeString(format, locales, true, null, x, y);
   t.is(value, 'Jan 4–Feb 6');
 });
@@ -265,7 +292,7 @@ test('date range "MMM d–MMM d, yyyy"', (t) => {
   const locales = 'en';
   const x = { year: 2014, month: 0, day: 4 };
   const y = { year: 2014, month: 1, day: 6 };
-  const format = formatDateOptionsYearMonthDayShort;
+  const format = formatDateOptionsYearMonthShortDay;
   const value = formatDateRangeString(format, locales, true, null, x, y);
   t.is(value, 'Jan 4–Feb 6, 2014');
 });
@@ -274,7 +301,7 @@ test('date range "MMM d, yyyy–MMM d, yyyy"', (t) => {
   const locales = 'en';
   const x = { year: 2014, month: 0, day: 4 };
   const y = { year: 2016, month: 1, day: 6 };
-  const format = formatDateOptionsYearMonthDayShort;
+  const format = formatDateOptionsYearMonthShortDay;
   const value = formatDateRangeString(format, locales, true, null, x, y);
   t.is(value, 'Jan 4, 2014–Feb 6, 2016');
 });
