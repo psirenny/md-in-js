@@ -53,8 +53,8 @@ React:
         formatDateRangeString,
       } from 'md-in-js';
 
-      // values = [{ hour: 16 }, { hour: 0 }] renders
-      // <time>4 PM–Midnight</time>
+      // values [{ hour: 16 }, { hour: 0 }] renders
+      // render <time>4 PM–Midnight</time>
       export default ({ values }) => {
         const locales = ['en'];
         const ltr = true;
