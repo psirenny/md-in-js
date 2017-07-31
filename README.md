@@ -38,9 +38,9 @@ css in js:
       },
     };
 
-component:
+React:
 
-    /components/TimeRangeEn.jsx:
+`/components/TimeRangeEn.jsx`
 
       import { createElement } from 'react';
 
@@ -51,6 +51,8 @@ component:
         formatDateRangeString,
       } from 'md-in-js';
 
+      // values = [{ hour: 16 }, { hour: 0 }] renders
+      // <time>4 PM–Midnight</time>
       export default ({ values }) => {
         const locales = ['en'];
         const ltr = true;
@@ -64,6 +66,3 @@ component:
           </time>
         );
       };
-
-  // <time>4 PM–Midnight</time>
-  <TimeRangeEn values={[{ hour: 16 }, { hour: 0 }]} />
