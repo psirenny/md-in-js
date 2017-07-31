@@ -18,6 +18,8 @@ Moreover, md-in-js incorporates the [Android Wearable specification](https://www
 
 css in js:
 
+`/css/typography.css.js`
+
     import {
       colorBlackHsl,
       colorLightBlue500Hsl,
