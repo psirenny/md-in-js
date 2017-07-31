@@ -14,7 +14,7 @@ The frameworks also try to simplify a broad and detailed specification. As a res
 
 Moreover, md-in-js incorporates the [Android Wearable specification](https://www.google.com/design/spec-wear/android-wear/introduction.html) which, you'd be hard pressed to find in any of the other frameworks.
 
-## Usage
+## Examples
 
 css in js:
 
