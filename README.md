@@ -30,13 +30,13 @@ css in js:
 
     export default {
       '.en.mobile .text': {
-        'color': `hsl${colorBlackHsl}`,
+        'color': `hsl(${colorBlackHsl})`,
         'font-size': typographySizeEnLikeBody1Device,
         'line-height': typographyLeadingEnLikeBody1,
         'opacity': typographyContrastBody1,
       },
       '.link': {
-        'color': `hsl${colorLightBlue500Hsl}`,
+        'color': `hsl(${colorLightBlue500Hsl})`,
       },
     };
 
