@@ -23,25 +23,42 @@ css in js:
     import {
       colorBlackHsl,
       colorLightBlue500Hsl,
-      typographyContrastBody1,
-      typographyLeadingEnLikeBody1,
+      colorWhiteHsl,
+      fontFileRoboto400NormalLatin,
+      fontUnicodeRangeLatin,
+      typographyOpacityBody1Dark,
+      typographyOpacityBody1Light,
+      typographyLeadingEnLikeBody1Dark,
+      typographyLeadingEnLikeBody1Light,
       typographySizeEnLikeBody1Desktop,
       typographySizeEnLikeBody1Device,
     } from 'md-in-js';
 
     export default {
-      '.text': {
-        'color': `hsl(${colorBlackHsl})`,
-        'opacity': typographyContrastBody1,
+      '@font-face': [{
+        'font-family': 'Roboto',
+        'src': `local('Roboto'), url(fontFileRoboto400NormalLatin)`,
+        'unicode-range': fontUnicodeRangeLatin,
+      }],
+      '.en': {
+        'font-family': 'Roboto',
       },
       '.en .text': {
         'line-height': typographyLeadingEnLikeBody1,
       },
+      '.en.desktop .text': {
+        'font-size': typographySizeEnLikeBody1Desktop,
+      },
       '.en.mobile .text': {
         'font-size': typographySizeEnLikeBody1Device,
       },
-      '.en.desktop .text': {
-        'font-size': typographySizeEnLikeBody1Desktop,
+      '.dark .text': {
+        'color': `hsl(${colorWhiteHsl})`,
+        'opacity': typographyOpacityBody1Dark,
+      },
+      '.light .text': {
+        'color': `hsl(${colorBlackHsl})`,
+        'opacity': typographyOpacityBody1Light,
       },
       '.link': {
         'color': `hsl(${colorLightBlue500Hsl})`,
