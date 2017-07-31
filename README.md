@@ -25,15 +25,23 @@ css in js:
       colorLightBlue500Hsl,
       typographyContrastBody1,
       typographyLeadingEnLikeBody1,
+      typographySizeEnLikeBody1Desktop,
       typographySizeEnLikeBody1Device,
     } from 'md-in-js';
 
     export default {
-      '.en.mobile .text': {
+      '.text': {
         'color': `hsl(${colorBlackHsl})`,
-        'font-size': typographySizeEnLikeBody1Device,
-        'line-height': typographyLeadingEnLikeBody1,
         'opacity': typographyContrastBody1,
+      },
+      '.en .text': {
+        'line-height': typographyLeadingEnLikeBody1,
+      },
+      '.en.mobile .text': {
+        'font-size': typographySizeEnLikeBody1Device,
+      },
+      '.en.desktop .text': {
+        'font-size': typographySizeEnLikeBody1Desktop,
       },
       '.link': {
         'color': `hsl(${colorLightBlue500Hsl})`,
