@@ -16,6 +16,8 @@ Moreover, md-in-js incorporates the [Android Wearable specification](https://www
 
 ## Usage
 
+css in js:
+
     import {
       colorBlackHsl,
       colorLightBlue500Hsl,
@@ -35,3 +37,33 @@ Moreover, md-in-js incorporates the [Android Wearable specification](https://www
         'color': `hsl${colorLightBlue500Hsl}`,
       },
     };
+
+component:
+
+    /components/TimeRangeEn.jsx:
+
+      import { createElement } from 'react';
+
+      import {
+        formatDateAliasHourMidnightEn as aliasMidnight,
+        formatDateAliasHourNoonEn as aliasNoon,
+        formatDateOptionsWeekdayHourMinShort as options,
+        formatDateRangeString,
+      } from 'md-in-js';
+
+      export default ({ values }) => {
+        const locales = ['en'];
+        const ltr = true;
+        const aliases = [aliasNoon, aliasMidnight];
+
+        return (
+          <time>
+            {{formatDateRangeString(
+              options, locales, ltr, aliases, values[0], values[1]
+            )}}
+          </time>
+        );
+      };
+
+  // <time>4 PM–Midnight</time>
+  <TimeRangeEn values={[{ hour: 16 }, { hour: 0 }]} />
