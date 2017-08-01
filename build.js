@@ -4,9 +4,10 @@
 
 import asyncEach from 'async/each';
 import asyncParallel from 'async/parallel';
-import { readdir as fsReaddir } from 'fs';
 import { copy as fsExtraCopy, remove as fsExtraRemove } from 'fs-extra';
+import klaw from 'klaw';
 import _endsWith from 'lodash/fp/endsWith';
+import _replace from 'lodash/fp/replace';
 import { join as pathJoin } from 'path';
 import { rollup as rollupBundle } from 'rollup';
 import rollupPluginBabel from 'rollup-plugin-babel';
@@ -16,13 +17,19 @@ import rollupPluginNodeResolve from 'rollup-plugin-node-resolve';
 const build = (cb) => {
   const srcDir = pathJoin(__dirname, 'src');
   const libDir = pathJoin(__dirname, 'lib');
+  const srcWalk = klaw(srcDir);
+  const srcPaths = [];
 
-  return fsReaddir(srcDir, (readSrcDirErr, srcFiles) => {
-    if (readSrcDirErr) {
-      return cb(readSrcDirErr);
+  srcWalk.on('data', (file) => {
+    if (!file.stats.isDirectory()) {
+      srcPaths.push(file.path);
     }
+  });
 
-    return fsExtraRemove(libDir, (removeLibDirErr) => {
+  srcWalk.on('error', (err) => cb(err));
+
+  srcWalk.on('end', () => (
+    fsExtraRemove(libDir, (removeLibDirErr) => {
       if (removeLibDirErr) {
         return cb(removeLibDirErr);
       }
@@ -37,11 +44,10 @@ const build = (cb) => {
         }),
       ];
 
-      return asyncEach(srcFiles, (srcFile, done1) => {
-        const srcPath = pathJoin(srcDir, srcFile);
-        const libPath = pathJoin(libDir, srcFile);
+      return asyncEach(srcPaths, (srcPath, done1) => {
+        const libPath = _replace(srcDir, libDir, srcPath);
 
-        if (!_endsWith('.js', srcFile)) {
+        if (!_endsWith('.js', srcPath)) {
           return fsExtraCopy(srcPath, libPath)
             .catch(err => done1(err))
             .then(() => done1());
@@ -80,8 +86,8 @@ const build = (cb) => {
           ),
         ], done1);
       }, cb);
-    });
-  });
+    })
+  ));
 };
 
 build((err) => {
