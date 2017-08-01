@@ -2,6 +2,8 @@
 
 Material Design constants (animation curves & durations, breakpoints, colors, shadows, etc…) all defined in JS.
 
+[![CircleCI](https://circleci.com/gh/psirenny/md-in-js/tree/master.svg?style=svg)](https://circleci.com/gh/psirenny/md-in-js/tree/master)
+
 ## What is it?
 
 md-in-js is an assortment of js constants and values used in material design. It's not a framework or a replacement for [material components](https://material.io/components/), [material design lite](https://getmdl.io/), [material-ui](http://www.material-ui.com/), et al.
