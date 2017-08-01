@@ -4,5 +4,6 @@
 .nyc_output
 *.log
 build.js
+coverage
 src
 test

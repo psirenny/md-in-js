@@ -1,4 +1,5 @@
 .nyc_output
 *.log
+coverage
 lib
 node_modules
