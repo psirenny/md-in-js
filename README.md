@@ -3,7 +3,6 @@
 Material Design constants (animation curves & durations, breakpoints, colors, shadows, etc…) all defined in JS.
 
 [![CircleCI](https://circleci.com/gh/psirenny/md-in-js/tree/master.svg?style=svg)](https://circleci.com/gh/psirenny/md-in-js/tree/master)
-
 [![Greenkeeper badge](https://badges.greenkeeper.io/psirenny/md-in-js.svg)](https://greenkeeper.io/)
 
 ## What is it?
