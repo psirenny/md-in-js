@@ -47,6 +47,7 @@
     "fs-extra": "4.0.0",
     "intl": "1.2.5",
     "klaw": "2.0.0",
+    "npm-run-all": "4.0.2",
     "rollup": "0.45.2",
     "rollup-plugin-babel": "2.7.1",
     "rollup-plugin-flow": "1.1.1",
@@ -67,9 +68,10 @@
   "scripts": {
     "ava": "ava",
     "build": "babel-node --presets=es2015,stage-0 build",
-    "check": "npm run fixpack && npm run flow check && npm run lint && npm run test",
+    "check": "npm-run-all --parallel fixpack flow-check lint test",
     "fixpack": "fixpack",
     "flow": "flow",
+    "flow-check": "flow check",
     "lint": "eslint .",
     "prepublishOnly": "npm run build",
     "test": "npm run ava"
