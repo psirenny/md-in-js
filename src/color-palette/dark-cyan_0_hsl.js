@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './color_cyan_500_hsl';
+export { default } from '../color/cyan_500_hsl';

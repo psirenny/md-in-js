@@ -1,5 +1,5 @@
 // @flow
 
-import format from './format_date-alias_hour_noon';
+import format from './date-alias_hour_noon';
 
 export default format('Poludnie');

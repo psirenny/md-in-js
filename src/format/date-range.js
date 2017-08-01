@@ -1,10 +1,10 @@
 // @flow
 
-import formatDate from './format_date';
-import formatRange from './format_range';
-import getter from './format_date-getter';
-import type { DateAlias } from './format_type_date-alias';
-import type { DateInput } from './format_type_date-input';
+import formatDate from './date';
+import formatRange from './range';
+import getter from './date-getter';
+import type { DateAlias } from './type_date-alias';
+import type { DateInput } from './type_date-input';
 
 const types = [
   'literal',

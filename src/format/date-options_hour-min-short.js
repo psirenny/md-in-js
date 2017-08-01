@@ -1,6 +1,6 @@
 // @flow
 
-import type { DateInput } from './format_type_date-input';
+import type { DateInput } from './type_date-input';
 
 const formatLong = {
   hour: 'numeric',

@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './typography_opacity_1_dark';
+export { default } from './opacity_1_dark';

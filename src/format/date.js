@@ -1,7 +1,7 @@
 // @flow
 
-import type { DateAlias } from './format_type_date-alias';
-import type { DateInput } from './format_type_date-input';
+import type { DateAlias } from './type_date-alias';
+import type { DateInput } from './type_date-input';
 
 export default (
   options: (DateInput) => Date$LocaleOptions,

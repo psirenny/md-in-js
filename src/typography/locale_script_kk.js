@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './typography_script_en-like';
+export { default } from './script_en-like';

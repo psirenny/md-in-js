@@ -1,5 +1,5 @@
 // @flow
 
-import format from './format_date-alias_hour_midnight';
+import format from './date-alias_hour_midnight';
 
 export default format('மிட்நைட்');

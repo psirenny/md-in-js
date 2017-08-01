@@ -1,6 +1,6 @@
 // @flow
 
-import mobileDuration from './animation_duration_mobile_exit';
-import ratio from './animation_duration-ratio_wearable-to-mobile';
+import mobileDuration from './duration_mobile_exit';
+import ratio from './duration-ratio_wearable-to-mobile';
 
 export default mobileDuration * ratio;

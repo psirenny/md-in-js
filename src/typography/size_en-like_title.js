@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './typography_scale_3';
+export { default } from './scale_3';

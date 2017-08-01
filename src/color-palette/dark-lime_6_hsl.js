@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './color-correction_yellow_55-70_dark_hsl';
+export { default } from '../color-correction/yellow_55-70_dark_hsl';

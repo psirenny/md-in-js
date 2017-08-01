@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './typography_weight_en-like_button';
+export { default } from './weight_en-like_button';

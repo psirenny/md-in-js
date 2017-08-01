@@ -1,5 +1,5 @@
 // @flow
 
-import enLikeSize from './typography_size_en-like_body_1_device';
+import enLikeSize from './size_en-like_body_1_device';
 
 export default enLikeSize + 1;

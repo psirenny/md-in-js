@@ -1,7 +1,7 @@
 // @flow
 
 import _reduce from 'lodash/fp/reduce';
-import type { DurationOption } from './format_duration-option';
+import type { DurationOption } from './duration-option';
 
 const separator = {
   type: 'literal',
