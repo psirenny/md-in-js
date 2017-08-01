@@ -37,6 +37,7 @@
     "babel-preset-es2015": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
     "babel-register": "6.24.1",
+    "coveralls": "2.13.1",
     "eslint": "4.3.0",
     "eslint-config-airbnb-base": "11.3.1",
     "eslint-plugin-babel": "4.1.2",
@@ -48,6 +49,7 @@
     "intl": "1.2.5",
     "klaw": "2.0.0",
     "npm-run-all": "4.0.2",
+    "nyc": "11.1.0",
     "rollup": "0.45.2",
     "rollup-plugin-babel": "2.7.1",
     "rollup-plugin-flow": "1.1.1",
@@ -66,14 +68,14 @@
   "module": "lib/index.js",
   "repository": "https://github.com/psirenny/md-in-js",
   "scripts": {
-    "ava": "ava",
     "build": "babel-node --presets=es2015,stage-0 build",
     "check": "npm-run-all --parallel fixpack flow-check lint test",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "fixpack": "fixpack",
     "flow": "flow",
     "flow-check": "flow check",
     "lint": "eslint .",
     "prepublishOnly": "npm run build",
-    "test": "npm run ava"
+    "test": "nyc ava"
   }
 }

@@ -5,3 +5,9 @@ machine:
 test:
   override:
     - npm run check
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - npm run coverage
