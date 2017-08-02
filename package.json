@@ -49,6 +49,7 @@
     "intl": "1.2.5",
     "klaw": "2.0.0",
     "npm-run-all": "4.0.2",
+    "nsp": "2.7.0",
     "nyc": "11.1.0",
     "rollup": "0.45.2",
     "rollup-plugin-babel": "2.7.1",
@@ -69,12 +70,13 @@
   "repository": "https://github.com/psirenny/md-in-js",
   "scripts": {
     "build": "babel-node --presets=es2015,stage-0 build",
-    "check": "npm-run-all --parallel fixpack flow-check lint test",
+    "check": "npm-run-all --parallel fixpack flow-check lint nsp test",
     "coverage": "nyc report --reporter=text-lcov | codecov",
     "fixpack": "fixpack",
     "flow": "flow",
     "flow-check": "flow check",
     "lint": "eslint .",
+    "nsp": "nsp check",
     "prepublishOnly": "npm run build",
     "test": "nyc ava"
   }
