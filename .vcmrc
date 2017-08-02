@@ -1,6 +1,7 @@
 {
   "scope": {
     "allowed": [
+      "chore",
       "md_animation",
       "md_color",
       "md_color-correction",
