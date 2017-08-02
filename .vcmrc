@@ -1,15 +1,15 @@
 {
   "scope": {
     "allowed": [
-      "md-animation",
-      "md-color",
-      "md-color-correction",
-      "md-font",
-      "md-format",
-      "md-layout",
-      "md-shadow",
-      "md-typography",
-      "md-units",
+      "md_animation",
+      "md_color",
+      "md_color-correction",
+      "md_font",
+      "md_format",
+      "md_layout",
+      "md_shadow",
+      "md_typography",
+      "md_units",
       "release"
     ],
     "validate": true
