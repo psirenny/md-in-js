@@ -1,0 +1,16 @@
+{
+  "scope": {
+    "allowed": [
+      "animation",
+      "color",
+      "color-correction",
+      "font",
+      "format",
+      "layout",
+      "shadow",
+      "typography",
+      "units"
+    ],
+    "validate": true
+  }
+}
