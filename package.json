@@ -64,16 +64,15 @@
   "repository": "https://github.com/psirenny/md-in-js",
   "scripts": {
     "build": "babel-node --presets=es2015,stage-0 build",
-    "check": "npm-run-all --parallel fixpack flow-check lint nsp test",
+    "check": "npm-run-all --parallel fixpack lint nsp typecheck test",
     "commitmsg": "validate-commit-msg",
     "coverage": "nyc report --reporter=text-lcov | codecov",
     "fixpack": "fixpack",
-    "flow": "flow",
-    "flow-check": "flow check",
     "lint": "eslint .",
     "nsp": "nsp check",
     "prepublishOnly": "npm run build",
     "release": "standard-version",
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "typecheck": "flow check"
   }
 }
