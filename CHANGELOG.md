@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.3"></a>
+## [1.14.3](https://github.com/psirenny/md-in-js/compare/v1.14.2...v1.14.3) (2017-08-02)
+
+
+### Reverts
+
+* **release:** Remove commitizen ([2ef91f0](https://github.com/psirenny/md-in-js/commit/2ef91f0))
+
+
+
 <a name="1.14.2"></a>
 ## [1.14.2](https://github.com/psirenny/md-in-js/compare/v1.14.1...v1.14.2) (2017-08-02)
 
