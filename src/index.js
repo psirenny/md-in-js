@@ -601,6 +601,7 @@ export { default as layoutBreakpointMobileLandscape } from './layout/breakpoint_
 export { default as layoutBreakpointMobilePortrait } from './layout/breakpoint_mobile_portrait';
 export { default as layoutBreakpointTabletLandscape } from './layout/breakpoint_tablet_landscape';
 export { default as layoutBreakpointTabletPortrait } from './layout/breakpoint_tablet_portrait';
+export { default as layoutStatusBarHeight } from './layout/status-bar_height';
 export { default as shadowAmbientOpacity } from './shadow/ambient_opacity';
 export { default as shadowElevation1 } from './shadow/elevation_1';
 export { default as shadowElevation2 } from './shadow/elevation_2';
