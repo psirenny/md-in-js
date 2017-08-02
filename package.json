@@ -9,15 +9,6 @@
       "babel-register"
     ]
   },
-  "babel": {
-    "plugins": [
-      "transform-flow-strip-types"
-    ],
-    "presets": [
-      "es2015",
-      "stage-0"
-    ]
-  },
   "bugs": {
     "url": "https://github.com/psirenny/md-in-js/issues"
   },
