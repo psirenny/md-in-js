@@ -5,5 +5,4 @@
 *.log
 build.js
 coverage
-src
 test
