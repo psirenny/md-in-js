@@ -625,6 +625,10 @@ export { default as shadowElevationDefault16 } from './shadow/elevation_16_defau
 export { default as shadowElevationDefault24 } from './shadow/elevation_24_default';
 export { default as shadowKeyPenumbraOpacity } from './shadow/key_penumbra_opacity';
 export { default as shadowKeyUmbraOpacity } from './shadow/key_umbra_opacity';
+export { default as typographyColorLight } from './typography/color_light';
+export { default as typographyColorLightDefault } from './typography/color_light_default';
+export { default as typographyColorDark } from './typography/color_dark';
+export { default as typographyColorDarkDefault } from './typography/color_dark_default';
 export { default as typographyContrastRatioIdeal } from './typography/contrast-ratio_ideal';
 export { default as typographyContrastRatioMinimum } from './typography/contrast-ratio_minimum';
 export { default as typographyLeadingCondensed0 } from './typography/leading_condensed_0';
