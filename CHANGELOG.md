@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.15.0"></a>
+# [1.15.0](https://github.com/psirenny/md-in-js/compare/v1.14.4...v1.15.0) (2017-08-03)
+
+
+### Features
+
+* **md_typography:** Add dark and light typography colors ([bdf4f26](https://github.com/psirenny/md-in-js/commit/bdf4f26))
+
+
+
 <a name="1.14.4"></a>
 ## [1.14.4](https://github.com/psirenny/md-in-js/compare/v1.14.3...v1.14.4) (2017-08-02)
 
