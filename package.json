@@ -1,7 +1,7 @@
 {
   "name": "md-in-js",
   "description": "Material Design in JS",
-  "version": "1.14.4",
+  "version": "1.16.0",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "ava": {
     "require": [

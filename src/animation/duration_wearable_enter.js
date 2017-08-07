@@ -1,6 +1,10 @@
 // @flow
 
-import mobileDuration from './duration_mobile_enter';
-import ratio from './duration-ratio_wearable-to-mobile';
+type Options = {
+  animationDurationMobileEnter: number,
+  animationDurationRatioWearableToMobile: number,
+};
 
-export default mobileDuration * ratio;
+export default (opts: Options) => (
+  opts.animationDurationRatioWearableToMobile * opts.animationDurationMobileEnter
+);

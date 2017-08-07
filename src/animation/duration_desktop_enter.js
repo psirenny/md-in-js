@@ -1,7 +1,11 @@
 // @flow
 
-import mobileEnterDuration from './duration_mobile_enter';
-import mobileExitDuration from './duration_mobile_exit';
-import desktopExitDuration from './duration_desktop_exit';
+type Options = {
+  desktopExitDuration: number,
+  mobileEnterDuration: number,
+  mobileExitDuration: number,
+};
 
-export default (mobileEnterDuration / mobileExitDuration) * desktopExitDuration;
+export default (opts: Options) => (
+  (opts.mobileEnterDuration / opts.mobileExitDuration) * opts.desktopExitDuration
+);
