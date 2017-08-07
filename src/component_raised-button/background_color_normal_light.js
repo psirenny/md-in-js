@@ -1,6 +1,5 @@
 // @flow
 
-import colorWhite from '../color/white_hsl';
-import backgroundColorNormalLight from './background_color_normal_light';
+type Options = { colorWhite: any };
 
-export default backgroundColorNormalLight({ colorWhite });
+export default (opts: Options) => opts.colorWhite;
