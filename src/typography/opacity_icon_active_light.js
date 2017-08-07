@@ -1,6 +1,5 @@
 // @flow
 
-import get from './get_opacity_icon_active_light';
-import opacity0Light from './opacity_0_light';
+type Options = { opacity0Light: any };
 
-export default get({ opacity0Light });
+export default (opts: Options) => opts.opacity0Light;
