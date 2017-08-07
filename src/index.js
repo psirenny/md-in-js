@@ -481,7 +481,6 @@ export { default as componentRaisedButtonTextOpacityNormalDark } from './compone
 export { default as componentRaisedButtonTextOpacityNormalDarkDefault } from './component_raised-button/text_opacity_normal_dark_default.js';
 export { default as componentRaisedButtonTextOpacityNormalLight } from './component_raised-button/text_opacity_normal_light.js';
 export { default as componentRaisedButtonTextOpacityNormalLightDefault } from './component_raised-button/text_opacity_normal_light_default.js';
-export { default as componentRaisedButtonTouchableHeight } from './component_raised-button/touchable-height.js';
 export { default as fontUnicodeRangeCyrillic } from './font/unicode-range_cyrillic';
 export { default as fontUnicodeRangeCyrillicExt } from './font/unicode-range_cyrillic-ext';
 export { default as fontUnicodeRangeDevanagari } from './font/unicode-range_devanagari';
@@ -659,6 +658,8 @@ export { default as layoutBreakpointMobilePortrait } from './layout/breakpoint_m
 export { default as layoutBreakpointTabletLandscape } from './layout/breakpoint_tablet_landscape';
 export { default as layoutBreakpointTabletPortrait } from './layout/breakpoint_tablet_portrait';
 export { default as layoutStatusBarHeight } from './layout/status-bar_height';
+export { default as layoutTouchTargetSize } from './layout/touch-target_size';
+export { default as layoutTouchTargetSpace } from './layout/touch-target_space';
 export { default as shadowAmbientOpacity } from './shadow/ambient_opacity';
 export { default as shadowElevation1 } from './shadow/elevation_1';
 export { default as shadowElevation12 } from './shadow/elevation_12';
