@@ -1,3 +1,5 @@
 // @flow
 
-export { default } from './opacity_0_dark';
+type Options = { opacity0Dark: any };
+
+export default (opts: Options) => opts.opacity0Dark;
