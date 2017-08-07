@@ -1,20 +1,28 @@
 // @flow
 
 export { default as animationDurationDesktopEnter } from './animation/duration_desktop_enter';
+export { default as animationDurationDesktopEnterDefault } from './animation/duration_desktop_enter_default';
 export { default as animationDurationDesktopExit } from './animation/duration_desktop_exit';
 export { default as animationDurationDesktopFullScreen } from './animation/duration_desktop_full-screen';
 export { default as animationDurationMobileEnter } from './animation/duration_mobile_enter';
 export { default as animationDurationMobileExit } from './animation/duration_mobile_exit';
 export { default as animationDurationMobileFullScreen } from './animation/duration_mobile_full-screen';
-export { default as animationDurationTabletEnter } from './animation/duration_tablet_enter';
-export { default as animationDurationTabletExit } from './animation/duration_tablet_exit';
-export { default as animationDurationTabletFullScreen } from './animation/duration_tablet_full-screen';
-export { default as animationDurationWearableEnter } from './animation/duration_wearable_enter';
-export { default as animationDurationWearableExit } from './animation/duration_wearable_exit';
-export { default as animationDurationWearableFullScreen } from './animation/duration_wearable_full-screen';
 export { default as animationDurationRatioDesktopToMobile } from './animation/duration-ratio_desktop-to-mobile';
+export { default as animationDurationRatioDesktopToMobileDefault } from './animation/duration-ratio_desktop-to-mobile_default';
 export { default as animationDurationRatioTabletToMobile } from './animation/duration-ratio_tablet-to-mobile';
 export { default as animationDurationRatioWearableToMobile } from './animation/duration-ratio_wearable-to-mobile';
+export { default as animationDurationTabletEnter } from './animation/duration_tablet_enter';
+export { default as animationDurationTabletEnterDefault } from './animation/duration_tablet_enter_default';
+export { default as animationDurationTabletExit } from './animation/duration_tablet_exit';
+export { default as animationDurationTabletExitDefault } from './animation/duration_tablet_exit_default';
+export { default as animationDurationTabletFullScreen } from './animation/duration_tablet_full-screen';
+export { default as animationDurationTabletFullScreenDefault } from './animation/duration_tablet_full-screen_default';
+export { default as animationDurationWearableEnter } from './animation/duration_wearable_enter';
+export { default as animationDurationWearableEnterDefault } from './animation/duration_wearable_enter_default';
+export { default as animationDurationWearableExit } from './animation/duration_wearable_exit';
+export { default as animationDurationWearableExitDefault } from './animation/duration_wearable_exit_default';
+export { default as animationDurationWearableFullScreen } from './animation/duration_wearable_full-screen';
+export { default as animationDurationWearableFullScreenDefault } from './animation/duration_wearable_full-screen_default';
 export { default as animationImageDark } from './animation/image_dark';
 export { default as animationImageLight } from './animation/image_light';
 export { default as animationTimingFunctionAcceleration } from './animation/timing-function_acceleration';

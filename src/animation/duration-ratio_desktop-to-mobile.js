@@ -1,5 +1,10 @@
 // @flow
 
-import mobileDuration from './duration_mobile_full-screen';
+type Options = {
+  animationDurationDesktopFullScreen: number,
+  animationDurationMobileFullScreen: number,
+};
 
-export default 200 / mobileDuration;
+export default (opts: Options) => (
+  opts.animationDurationDesktopFullScreen / opts.animationDurationMobileFullScreen
+);
