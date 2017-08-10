@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.17.0"></a>
+# [1.17.0](https://github.com/psirenny/md-in-js/compare/v1.16.0...v1.17.0) (2017-08-08)
+
+
+### Bug Fixes
+
+* amend last commit ([eeb47c0](https://github.com/psirenny/md-in-js/commit/eeb47c0))
+* fix incorrect import paths ([8da622e](https://github.com/psirenny/md-in-js/commit/8da622e))
+
+
+### Features
+
+* **md_layout:** add touch target size and space ([bac0c2e](https://github.com/psirenny/md-in-js/commit/bac0c2e))
+
+
+### Reverts
+
+* revert rollup-plugin-babel dependency that does not build ([b70b464](https://github.com/psirenny/md-in-js/commit/b70b464))
+
+
+
 <a name="1.16.0"></a>
 # [1.16.0](https://github.com/psirenny/md-in-js/compare/v1.15.0...v1.16.0) (2017-08-07)
 
