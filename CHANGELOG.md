@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/psirenny/md-in-js/compare/v1.17.0...v2.0.0) (2017-08-10)
+
+
+### Code Refactoring
+
+* **md_elevation:** refactor elevations and shadow ([cefe030](https://github.com/psirenny/md-in-js/commit/cefe030))
+
+
+### BREAKING CHANGES
+
+* **md_elevation:** shadows are namespaced under elevations
+* **md_elevation:** shadows are arrows to accommodate css drop shadow
+
+
+
 <a name="1.17.0"></a>
 # [1.17.0](https://github.com/psirenny/md-in-js/compare/v1.16.0...v1.17.0) (2017-08-08)
 
