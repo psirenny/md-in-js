@@ -5,10 +5,10 @@
       "md_color",
       "md_color-correction",
       "md_component_raised-button",
+      "md_elevation",
       "md_font",
       "md_format",
       "md_layout",
-      "md_shadow",
       "md_typography",
       "md_units",
       "release"
