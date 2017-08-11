@@ -2,11 +2,9 @@
 
 type Options = {
   elevationShadowHeights: { [number]: number },
-  componentRaisedButtonElevationHeightPressed: number,
+  componentRaisedButtonElevationPressed: number,
 }
 
 export default (opts: Options) => (
-  opts.elevationShadowHeights[
-    opts.componentRaisedButtonElevationHeightPressed
-  ]
+  opts.elevationShadowHeights[opts.componentRaisedButtonElevationPressed]
 );
