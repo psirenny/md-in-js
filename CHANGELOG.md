@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/psirenny/md-in-js/compare/v2.1.0...v2.2.0) (2017-08-11)
+
+
+### Features
+
+* **md_component_toolbar:** add toolbar vertical icon padding constants ([def4211](https://github.com/psirenny/md-in-js/commit/def4211))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/psirenny/md-in-js/compare/v2.0.1...v2.1.0) (2017-08-11)
 
