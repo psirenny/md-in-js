@@ -65,7 +65,7 @@
   "scripts": {
     "audit": "nsp check",
     "build": "babel-node --presets=es2015,stage-0 build",
-    "check": "npm-run-all --parallel audit fixpack lint typecheck test",
+    "check": "npm-run-all --parallel audit build fixpack lint typecheck test",
     "commitmsg": "validate-commit-msg",
     "coverage": "nyc report --reporter=text-lcov | codecov",
     "fixpack": "fixpack",
