@@ -717,6 +717,7 @@ export { default as layoutBreakpointWindowLarge } from './layout/breakpoint_wind
 export { default as layoutBreakpointWindowMedium } from './layout/breakpoint_window_medium';
 export { default as layoutBreakpointWindowSmall } from './layout/breakpoint_window_small';
 export { default as layoutBreakpointWindowXLarge } from './layout/breakpoint_window_x-large';
+export { default as layoutBreakpointWindowXSmall } from './layout/breakpoint_window_x-small';
 export { default as layoutStatusBarHeight } from './layout/status-bar_height';
 export { default as layoutTouchTargetSize } from './layout/touch-target_size';
 export { default as layoutTouchTargetSpace } from './layout/touch-target_space';

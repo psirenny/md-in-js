@@ -1,3 +1,3 @@
 // @flow
 
-export default 1024;
+export default [1024, 1280];
