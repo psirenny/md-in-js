@@ -713,6 +713,10 @@ export { default as layoutBreakpointMobileLandscape } from './layout/breakpoint_
 export { default as layoutBreakpointMobilePortrait } from './layout/breakpoint_mobile_portrait';
 export { default as layoutBreakpointTabletLandscape } from './layout/breakpoint_tablet_landscape';
 export { default as layoutBreakpointTabletPortrait } from './layout/breakpoint_tablet_portrait';
+export { default as layoutBreakpointWindowLarge } from './layout/breakpoint_window_large';
+export { default as layoutBreakpointWindowMedium } from './layout/breakpoint_window_medium';
+export { default as layoutBreakpointWindowSmall } from './layout/breakpoint_window_small';
+export { default as layoutBreakpointWindowXLarge } from './layout/breakpoint_window_x-large';
 export { default as layoutStatusBarHeight } from './layout/status-bar_height';
 export { default as layoutTouchTargetSize } from './layout/touch-target_size';
 export { default as layoutTouchTargetSpace } from './layout/touch-target_space';
