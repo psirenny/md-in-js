@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.0"></a>
+# [2.5.0](https://github.com/psirenny/md-in-js/compare/v2.4.0...v2.5.0) (2017-08-14)
+
+
+### Features
+
+* **md_component_bottom-sheet:** add bottom sheet component ([504bc6c](https://github.com/psirenny/md-in-js/commit/504bc6c))
+* **md_layout:** add window size breakpoints ([0c33229](https://github.com/psirenny/md-in-js/commit/0c33229))
+* **md_layout:** add x-small window size breakpoint ([a82fca9](https://github.com/psirenny/md-in-js/commit/a82fca9))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/psirenny/md-in-js/compare/v2.3.0...v2.4.0) (2017-08-14)
 
