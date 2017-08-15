@@ -324,7 +324,7 @@ test('date range "MMMM d, yyyy–MMMM d, yyyy"', (t) => {
   t.is(value, 'January 4, 2014–February 6, 2016');
 });
 
-test('duration "h:mm:ss"', (t) => {
+test('duration "hh:mm:ss"', (t) => {
   const duration = (100 * hr) + (1 * min) + (1.5 * sec);
   const format = formatDurationOptionsHourMinSec;
   const value = formatDurationString(format, duration);
@@ -338,7 +338,7 @@ test('duration "h:mm:ss"', (t) => {
   t.is(value, '1:01:02');
 });
 
-test('duration "h:mm"', (t) => {
+test('duration "hh:mm"', (t) => {
   const duration = (100 * hr) + (1.5 * min);
   const format = formatDurationOptionsHourMin;
   const value = formatDurationString(format, duration);
@@ -352,7 +352,7 @@ test('duration "h:mm"', (t) => {
   t.is(value, '1:02');
 });
 
-test('duration "m:ss"', (t) => {
+test('duration "mm:ss"', (t) => {
   const duration = (100 * min) + (1.5 * sec);
   const format = formatDurationOptionsMinSec;
   const value = formatDurationString(format, duration);
