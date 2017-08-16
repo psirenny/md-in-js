@@ -2,10 +2,10 @@
 
 /* eslint-disable no-undef */
 
-declare type IntlLocales = string | string;
+declare type IntlLocales = string | string[];
 
 declare type IntlFormatPart = {
-  type: 'literal' | string,
+  type: string,
   value: string,
 };
 

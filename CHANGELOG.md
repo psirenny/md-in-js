@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.1"></a>
+## [2.5.1](https://github.com/psirenny/md-in-js/compare/v2.5.0...v2.5.1) (2017-08-16)
+
+
+### Bug Fixes
+
+* **md_font:** fix missing font file data ([e7b9d99](https://github.com/psirenny/md-in-js/commit/e7b9d99)), closes [#13](https://github.com/psirenny/md-in-js/issues/13)
+
+
+
 <a name="2.5.0"></a>
 # [2.5.0](https://github.com/psirenny/md-in-js/compare/v2.4.0...v2.5.0) (2017-08-14)
 
