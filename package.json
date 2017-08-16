@@ -64,7 +64,7 @@
   "repository": "https://github.com/psirenny/md-in-js",
   "scripts": {
     "audit": "nsp check",
-    "build": "babel-node --presets=es2015,stage-0 build",
+    "build": "babel-node build",
     "check": "npm-run-all --parallel audit build fixpack lint typecheck test",
     "commitmsg": "validate-commit-msg",
     "coverage": "nyc report --reporter=text-lcov | codecov",
