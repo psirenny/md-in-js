@@ -36,7 +36,7 @@
     "eslint-plugin-import": "2.7.0",
     "fixpack": "2.3.1",
     "flow-bin": "0.60.1",
-    "fs-extra": "4.0.2",
+    "fs-extra": "4.0.3",
     "husky": "0.15.0-beta.2",
     "intl": "1.2.5",
     "klaw": "2.1.1",
