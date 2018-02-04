@@ -13,7 +13,7 @@
     "url": "https://github.com/psirenny/md-in-js/issues"
   },
   "dependencies": {
-    "lodash": "4.17.4"
+    "lodash": "4.17.5"
   },
   "devDependencies": {
     "async": "2.6.0",
